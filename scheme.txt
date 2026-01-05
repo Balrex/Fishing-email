@@ -1,0 +1,18 @@
+phish-analyzer/
+├── core/
+│   ├── __init__.py
+│   ├── parser.py          # Парсинг .eml и заголовков
+│   ├── auth_checker.py    # SPF/DKIM/DMARC
+│   ├── extractor.py       # Извлечение IP, доменов, URL
+│   └── risk_evaluator.py  # Оценка риска
+├── osint/
+│   ├── __init__.py
+│   ├── urlscan.py         # Интеграция с urlscan.io
+│   ├── virustotal.py      # VirusTotal API
+│   └── abuseipdb.py       # AbuseIPDB API
+├── models/
+│   ├── __init__.py
+│   └── report.py          # Модель отчёта
+├── config.py              # Конфигурация (API-ключи и т.д.)
+├── main.py                # Точка входа (CLI)
+└── requirements.txt
