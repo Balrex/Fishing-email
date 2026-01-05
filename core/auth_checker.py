@@ -1,6 +1,6 @@
 # core/auth_checker.py
-import pyspf as spf
-import dkimpy as dkim
+import spf
+import dkim
 from authres import AuthenticationResults
 
 def check_spf(domain: str, ip: str, helo: str = "") -> bool:

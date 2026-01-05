@@ -1,7 +1,7 @@
 # osint/urlscan.py
 import asyncio
 import aiohttp
-from core.config import config
+from config import config
 
 async def scan_url(url: str, session: aiohttp.ClientSession) -> dict | None:
     if not config.URLSCAN_API_KEY:
